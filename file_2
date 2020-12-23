@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int fact(float num)
+{
+	if (num == 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return num * fact(num - 1);
+	}
+}
+int main()
+{
+	int n, r, Per;
+	cout << "The following is a factorial/Combinetric Program: \n\n";
+	cout << "Enter the n: ";
+	cin >> n;
+	cout << "Enter the r: ";
+	cin >> r;
+	Per = fact(n) / fact(n - r); // Per means nPr
+	cout << "Permutation is= " << Per << endl << endl;
+	system("pause");
+	return 0;
+}
