@@ -1,0 +1,38 @@
+//Permutation program
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main() {
+
+	//variables
+	string str1, str2, str3;
+
+	cout << "\n\nA program that prints the permutations of 3 strings entered.";
+	cout << endl << endl;
+
+	cout << "Please enter three strings: \n\nString1: ";
+		cin >> str1;
+
+		//prompt and read second string from user
+
+		cout << "String2: ";
+		cin >> str2;
+
+		//prompt and read third string from user
+
+		cout << "String3: ";
+			cin >> str3;
+
+		//print the permutations of the strings entered
+			cout << "\n\nThe permutations of the strings entered are:\n "
+				<< "\n" << str1 << "-" << str2 << "-" << str3
+				<< "\n" << str1 << "-" << str3 << "-" << str2
+				<< "\n" << str2 << "-" << str1 << "-" << str3
+				<< "\n" << str2 << "-" << str3 << "-" << str1
+				<< "\n" << str3 << "-" << str1 << "-" << str2
+				<< "\n" << str3 << "-" << str2 << "-" << str1;
+			cout << endl << endl;
+			system("pause");
+			return 0;
+}
